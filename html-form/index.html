@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Document</title>
+</head>
+
+<body>
+   <form action="http://coba.org/get" method="get">
+      <table>
+         <tr>
+            <td><label for="name">Name :</label></td>
+            <td>
+               <input type="text" name="name" id="name" placeholder="Pojok Code" autocomplete="on" required autofocus />
+            </td>
+         </tr>
+         <tr>
+            <td><label for="password">Password :</label></td>
+            <td>
+               <input type="password" name="password" id="password" placeholder="min 8 caracter" required />
+            </td>
+         </tr>
+         <tr>
+            <td><label for="telpon">Tlp :</label></td>
+            <td>
+               <input type="tel" name="telpon" id="telpon" placeholder="021 000-000"
+                  pattern="[0-9]{3} [0-9]{3}-[0-9]{3}" />
+            </td>
+         <tr>
+            <td>
+               <label for="number">Dekade Kesukan:</label>
+            </td>
+            <td>
+               <input type="number" name="number" id="number" min="1980" max="2022" step="10" value="2022">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <input type="text" name="coba" id="coba">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="language">Favorite Lnaguge</label>
+            </td>
+            <td>
+               <select name="lang" id="lang">
+                  <optgroup label="Front End">
+                     <option value="html">HTML</option>
+                     <option value="css">CSS</option>
+                     <option value="javasript" selected>Javascript</option>
+                  </optgroup>
+                  <optgroup label="Back End">
+                     <option value="php">PHP</option>
+                     <option value="java">Java</option>
+                     <option value="python">Python</option>
+                  </optgroup>
+               </select>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="language">Favorite Lnaguge</label>
+            </td>
+            <td>
+               <select name="lang" id="lang" multiple size="7">
+                  <optgroup label="Front End">
+                     <option value="html">HTML</option>
+                     <option value="css">CSS</option>
+                     <option value="javasript" selected>Javascript</option>
+                  </optgroup>
+                  <optgroup label="Back End">
+                     <option value="php">PHP</option>
+                     <option value="java">Java</option>
+                     <option value="python">Python</option>
+                  </optgroup>
+               </select>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="prioritas">Prioritas</label>
+            </td>
+            <td>
+               <input type="checkbox" name="kerja" id="kerja">
+               <label for="kerja">Kerja</label>
+               <input type="checkbox" name="kuliah" id="kuliah">
+               <label for="kuliah">Kuliah</label>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="kelamin">Jenis Kelamin</label>
+            </td>
+            <td>
+               <input type="radio" name="kelamin" id="laki-laki">
+               <label for="laki-laki">Laki-laki</label>
+               <input type="radio" name="kelamin" id="perempuan">
+               <label for="perempuan">perempuan</label>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="dob">Tanggal Lhair</label>
+            </td>
+            <td>
+               <input type="date" name="dob" id="dob" min="1980-01-01" max="2022-12-30">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="emial">Email</label>
+            </td>
+            <td>
+               <input type="email" name="email" id="email">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="foto">Foro</label>
+            </td>
+            <td>
+               <input type="file" name="foto" id="foto">
+            </td>
+         </tr>
+         <tr>
+            <td><label for="volume">Volume</label></td>
+            <td>
+               <input type="range" name="volume" id="volume" min="0" max="50">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="jamlahir">Jam Lahir </label>
+            </td>
+            <td>
+               <input type="time" name="jamlahir" id="jamlhir">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="favcolor">Fav Color</label>
+            </td>
+            <td>
+               <input type="color" name="favcolor" id="favolor" value="#e66465">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="alamat">Alamat</label>
+            </td>
+            <td>
+               <textarea name="alamat" id="alamat" cols="50" rows="10"></textarea>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="2">
+               <input type="submit" value="Submit">
+               <input type="reset" value="Reset">
+            </td>
+         </tr>
+      </table>
+   </form>
+</body>
+
+</html>
